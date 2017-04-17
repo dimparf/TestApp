@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="action_create_ad">Создать объявление</string>
+    <string name="edit_ad">Редактирование объявления</string>
+    <string name="content">Содержание</string>
+    <string name="price">Цена</string>
+    <string name="title">Заголовок</string>
+    <string name="ok">OK</string>
+    <string name="back">Назад</string>
+    <string name="edit">Редактировать</string>
+    <string name="show_ad">Объявление</string>
+    <string name="delete">Удалить</string>
+    <string name="price_should_be_greater_than_zero">Цена должна быть больше нуля</string>
+    <string name="adtitle_should_be_non_empty">Заголовок объявления должен быть заполнен</string>
+</resources>

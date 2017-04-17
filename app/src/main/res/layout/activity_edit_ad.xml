@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/editAdToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="@string/edit_ad"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/titleTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAdToolbar"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/priceTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextInputLayout"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/price_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contentTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceTextInputLayout"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contentTextInputLayout">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:text="@string/ok"
+            android:onClick="saveAd" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:onClick="deleteAd"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:onClick="navigateBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="29dp"
+            android:text="@string/back"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
